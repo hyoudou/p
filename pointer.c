@@ -8,7 +8,7 @@ f(char **arg)
 int
 main(int argc, char **argv)
 {
-    char (*fp)(char **); // char (char **)
+    char (*fp)(char **); // pointer to char (char **)
     fp = f;
     return (argc > 1)?(int)fp(argv):0;
 }
